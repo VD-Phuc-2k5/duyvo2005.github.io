@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #04001a;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+  padding: 20px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  background-color: #000000;
+  height: 100vh;
+  margin: 0px 20px 20px 20px;
+  padding: 5px;
+  border: 2px solid rgba(255, 40, 219, 0.521);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.para {
+  text-align: justify;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 2em;
+  margin: 30px 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image .img-item {
+  flex: 1;
+  margin: 20px;
+  object-fit: cover;
+  border: 1px solid #c5b0ff;
+  border-radius: 10px;
+}
+
+.container #btn {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #00d9ff;
+  border-radius: 25px;
+  margin: auto;
+  font-weight: 800;
+  box-shadow: 5px 10px 10px #00b7ff5d;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  background-color: #ffff;
+}
+
+.container #btn span {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  text-align: center;
+  line-height: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #111;
+}
+
+#btn:hover {
+  background-color: #aaaaaa;
+  border: 2px solid #ff00c8;
+  box-shadow: 5px 10px 10px #ff00ff5d;
+}
+
+#btn:active {
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 1090px) {
+  .image .img-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .para {
+    margin: 10px;
+    font-size: 1em;
+  }
+
+  .image .img-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 512px), (max-width: 375px) {
+  .container {
+    margin: 0;
+    border: none;
+  }
+
+  .para {
+    margin: 10px 20px 30px 10px;
+    font-size: 0.8em;
+  }
+
+  .image .img-item {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
